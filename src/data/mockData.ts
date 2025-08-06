@@ -1,10 +1,20 @@
 import { ServiceProvider, ServiceCategory } from '../types';
+import { 
+  Sparkles, 
+  Wrench, 
+  Zap, 
+  Hammer, 
+  Palette, 
+  Settings, 
+  Thermometer, 
+  Leaf 
+} from 'lucide-react';
 
 export const serviceCategories: ServiceCategory[] = [
   {
     id: '1',
     name: 'Cleaning',
-    icon: '🧹',
+    icon: 'Sparkles',
     description: 'House cleaning, deep cleaning, move-in/out cleaning',
     averagePrice: '₹200-400/hr',
     providers: 127
@@ -12,7 +22,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '2',
     name: 'Plumbing',
-    icon: '🔧',
+    icon: 'Wrench',
     description: 'Repairs, installations, emergency services',
     averagePrice: '₹600-900/hr',
     providers: 89
@@ -20,7 +30,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '3',
     name: 'Electrical',
-    icon: '⚡',
+    icon: 'Zap',
     description: 'Wiring, outlets, lighting, electrical repairs',
     averagePrice: '₹650-1000/hr',
     providers: 76
@@ -28,7 +38,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '4',
     name: 'Carpentry',
-    icon: '🔨',
+    icon: 'Hammer',
     description: 'Furniture assembly, shelving, custom woodwork',
     averagePrice: '₹350-600/hr',
     providers: 94
@@ -36,7 +46,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '5',
     name: 'Painting',
-    icon: '🎨',
+    icon: 'Palette',
     description: 'Interior/exterior painting, touch-ups, color consultation',
     averagePrice: '₹280-500/hr',
     providers: 112
@@ -44,7 +54,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '6',
     name: 'Appliance Repair',
-    icon: '🔧',
+    icon: 'Settings',
     description: 'Washing machines, refrigerators, dishwashers, ovens',
     averagePrice: '₹550-850/hr',
     providers: 58
@@ -52,7 +62,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '7',
     name: 'HVAC',
-    icon: '🌡️',
+    icon: 'Thermometer',
     description: 'Heating, cooling, ventilation system maintenance',
     averagePrice: '₹700-1100/hr',
     providers: 42
@@ -60,7 +70,7 @@ export const serviceCategories: ServiceCategory[] = [
   {
     id: '8',
     name: 'Landscaping',
-    icon: '🌱',
+    icon: 'Leaf',
     description: 'Lawn care, garden maintenance, tree trimming',
     averagePrice: '₹300-550/hr',
     providers: 85
@@ -211,5 +221,190 @@ export const serviceProviders: ServiceProvider[] = [
     badges: ['Organic Expert', 'Seasonal Care'],
     responseTime: '~8 mins',
     completedJobs: 523
+  },
+  // Additional Cleaning providers
+  {
+    id: '9',
+    name: 'Priya Sharma',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    rating: 4.7,
+    reviewCount: 189,
+    experience: '5 years',
+    verified: true,
+    services: ['Cleaning'],
+    hourlyRate: 320,
+    description: 'Specialized in apartment cleaning and sanitization services. Quick and efficient cleaning solutions.',
+    availability: 'available',
+    location: 'Central Mumbai',
+    distance: 2.1,
+    badges: ['Sanitization Expert', 'Quick Service'],
+    responseTime: '~7 mins',
+    completedJobs: 445
+  },
+  {
+    id: '10',
+    name: 'Rajesh Kumar',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.6,
+    reviewCount: 98,
+    experience: '4 years',
+    verified: true,
+    services: ['Cleaning'],
+    hourlyRate: 250,
+    description: 'Commercial and residential cleaning specialist. Experience with office spaces and homes.',
+    availability: 'busy',
+    location: 'Andheri',
+    distance: 3.8,
+    badges: ['Commercial Expert', 'Affordable'],
+    responseTime: '~12 mins',
+    completedJobs: 267
+  },
+  // Additional Plumbing providers
+  {
+    id: '11',
+    name: 'Arjun Patel',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.8,
+    reviewCount: 134,
+    experience: '10 years',
+    verified: true,
+    services: ['Plumbing'],
+    hourlyRate: 680,
+    description: 'Expert in bathroom renovations and pipeline installations. Licensed professional.',
+    availability: 'available',
+    location: 'Bandra',
+    distance: 4.2,
+    badges: ['Renovation Expert', 'Licensed'],
+    responseTime: '~10 mins',
+    completedJobs: 389
+  },
+  {
+    id: '12',
+    name: 'Suresh Reddy',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    rating: 4.9,
+    reviewCount: 245,
+    experience: '15 years',
+    verified: true,
+    services: ['Plumbing'],
+    hourlyRate: 820,
+    description: 'Senior plumber with expertise in water heater installations and leak repairs.',
+    availability: 'available',
+    location: 'Powai',
+    distance: 6.1,
+    badges: ['Senior Expert', 'Water Heater Specialist'],
+    responseTime: '~15 mins',
+    completedJobs: 612
+  },
+  // Additional Electrical providers
+  {
+    id: '13',
+    name: 'Kavita Singh',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+    rating: 4.7,
+    reviewCount: 167,
+    experience: '8 years',
+    verified: true,
+    services: ['Electrical'],
+    hourlyRate: 780,
+    description: 'Certified electrician specializing in home automation and solar panel installations.',
+    availability: 'available',
+    location: 'Thane',
+    distance: 8.5,
+    badges: ['Home Automation', 'Solar Expert'],
+    responseTime: '~18 mins',
+    completedJobs: 334
+  },
+  {
+    id: '14',
+    name: 'Amit Joshi',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.8,
+    reviewCount: 201,
+    experience: '12 years',
+    verified: true,
+    services: ['Electrical'],
+    hourlyRate: 920,
+    description: 'Expert electrician for industrial and residential projects. 24/7 emergency services.',
+    availability: 'offline',
+    location: 'Navi Mumbai',
+    distance: 12.3,
+    badges: ['Industrial Expert', '24/7 Emergency'],
+    responseTime: '~25 mins',
+    completedJobs: 567
+  },
+  // Additional Carpentry providers
+  {
+    id: '15',
+    name: 'Ravi Carpenter',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.6,
+    reviewCount: 123,
+    experience: '7 years',
+    verified: true,
+    services: ['Carpentry'],
+    hourlyRate: 450,
+    description: 'Custom furniture maker and home renovation specialist. Quality woodwork guaranteed.',
+    availability: 'available',
+    location: 'Malad',
+    distance: 5.7,
+    badges: ['Custom Furniture', 'Quality Work'],
+    responseTime: '~12 mins',
+    completedJobs: 289
+  },
+  {
+    id: '16',
+    name: 'Vikram Wood',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    rating: 4.9,
+    reviewCount: 156,
+    experience: '14 years',
+    verified: true,
+    services: ['Carpentry'],
+    hourlyRate: 650,
+    description: 'Master carpenter with expertise in modular kitchens and wardrobes. Premium quality work.',
+    availability: 'busy',
+    location: 'Juhu',
+    distance: 7.2,
+    badges: ['Master Craftsman', 'Modular Expert'],
+    responseTime: '~20 mins',
+    completedJobs: 445
+  },
+  // Additional Painting providers
+  {
+    id: '17',
+    name: 'Neha Artist',
+    avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face',
+    rating: 4.8,
+    reviewCount: 178,
+    experience: '6 years',
+    verified: true,
+    services: ['Painting'],
+    hourlyRate: 380,
+    description: 'Interior designer and painter. Specialized in texture painting and wall art.',
+    availability: 'available',
+    location: 'Worli',
+    distance: 3.4,
+    badges: ['Interior Designer', 'Texture Expert'],
+    responseTime: '~8 mins',
+    completedJobs: 356
+  },
+  {
+    id: '18',
+    name: 'Rajesh Painter',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    rating: 4.7,
+    reviewCount: 234,
+    experience: '11 years',
+    verified: true,
+    services: ['Painting'],
+    hourlyRate: 420,
+    description: 'Professional house painter with expertise in exterior and weather-resistant paints.',
+    availability: 'available',
+    location: 'Goregaon',
+    distance: 9.1,
+    badges: ['Exterior Expert', 'Weather Resistant'],
+    responseTime: '~15 mins',
+    completedJobs: 567
   }
 ];
