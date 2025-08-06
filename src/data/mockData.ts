@@ -6,7 +6,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Cleaning',
     icon: '🧹',
     description: 'House cleaning, deep cleaning, move-in/out cleaning',
-    averagePrice: '$25-50/hr',
+    averagePrice: '₹200-400/hr',
     providers: 127
   },
   {
@@ -14,7 +14,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Plumbing',
     icon: '🔧',
     description: 'Repairs, installations, emergency services',
-    averagePrice: '$80-120/hr',
+    averagePrice: '₹600-900/hr',
     providers: 89
   },
   {
@@ -22,7 +22,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Electrical',
     icon: '⚡',
     description: 'Wiring, outlets, lighting, electrical repairs',
-    averagePrice: '$85-130/hr',
+    averagePrice: '₹650-1000/hr',
     providers: 76
   },
   {
@@ -30,7 +30,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Carpentry',
     icon: '🔨',
     description: 'Furniture assembly, shelving, custom woodwork',
-    averagePrice: '$45-75/hr',
+    averagePrice: '₹350-600/hr',
     providers: 94
   },
   {
@@ -38,7 +38,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Painting',
     icon: '🎨',
     description: 'Interior/exterior painting, touch-ups, color consultation',
-    averagePrice: '$35-65/hr',
+    averagePrice: '₹280-500/hr',
     providers: 112
   },
   {
@@ -46,7 +46,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Appliance Repair',
     icon: '🔧',
     description: 'Washing machines, refrigerators, dishwashers, ovens',
-    averagePrice: '$75-110/hr',
+    averagePrice: '₹550-850/hr',
     providers: 58
   },
   {
@@ -54,7 +54,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'HVAC',
     icon: '🌡️',
     description: 'Heating, cooling, ventilation system maintenance',
-    averagePrice: '$90-140/hr',
+    averagePrice: '₹700-1100/hr',
     providers: 42
   },
   {
@@ -62,7 +62,7 @@ export const serviceCategories: ServiceCategory[] = [
     name: 'Landscaping',
     icon: '🌱',
     description: 'Lawn care, garden maintenance, tree trimming',
-    averagePrice: '$40-70/hr',
+    averagePrice: '₹300-550/hr',
     providers: 85
   }
 ];
@@ -77,7 +77,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '8 years',
     verified: true,
     services: ['Cleaning'],
-    hourlyRate: 35,
+    hourlyRate: 280,
     description: 'Professional house cleaner with eco-friendly products. Specializing in deep cleaning and move-in/out services.',
     availability: 'available',
     location: 'Downtown',
@@ -95,7 +95,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '12 years',
     verified: true,
     services: ['Plumbing'],
-    hourlyRate: 95,
+    hourlyRate: 750,
     description: 'Licensed plumber with emergency services. Available 24/7 for urgent repairs and installations.',
     availability: 'available',
     location: 'Midtown',
@@ -113,7 +113,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '6 years',
     verified: true,
     services: ['Electrical'],
-    hourlyRate: 110,
+    hourlyRate: 850,
     description: 'Certified electrician specializing in smart home installations and safety upgrades.',
     availability: 'busy',
     location: 'Uptown',
@@ -131,7 +131,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '10 years',
     verified: true,
     services: ['Carpentry'],
-    hourlyRate: 65,
+    hourlyRate: 500,
     description: 'Master carpenter for custom furniture, built-ins, and home renovations.',
     availability: 'available',
     location: 'Westside',
@@ -149,7 +149,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '7 years',
     verified: true,
     services: ['Painting'],
-    hourlyRate: 45,
+    hourlyRate: 350,
     description: 'Professional painter with color consultation services. Interior and exterior painting specialist.',
     availability: 'available',
     location: 'Eastside',
@@ -167,7 +167,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '15 years',
     verified: true,
     services: ['Appliance Repair'],
-    hourlyRate: 85,
+    hourlyRate: 650,
     description: 'Appliance repair specialist for all major brands. Same-day service available.',
     availability: 'available',
     location: 'Central',
@@ -185,7 +185,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '9 years',
     verified: true,
     services: ['HVAC'],
-    hourlyRate: 125,
+    hourlyRate: 950,
     description: 'HVAC technician specializing in energy-efficient systems and maintenance.',
     availability: 'offline',
     location: 'Northside',
@@ -203,7 +203,7 @@ export const serviceProviders: ServiceProvider[] = [
     experience: '11 years',
     verified: true,
     services: ['Landscaping'],
-    hourlyRate: 55,
+    hourlyRate: 420,
     description: 'Landscaping professional with organic gardening expertise and seasonal maintenance.',
     availability: 'available',
     location: 'Southside',

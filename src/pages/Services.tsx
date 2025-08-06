@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { SearchBar } from '../components/SearchBar';
 import { ProviderCard } from '../components/ProviderCard';
@@ -8,13 +8,12 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Filter, SlidersHorizontal } from 'lucide-react';
 import { serviceProviders } from '../data/mockData';
 import { ServiceProvider } from '../types';
+import { toast } from '@/hooks/use-toast';
 
-interface ServicesPageProps {
-  serviceType?: string;
-}
-
-export const ServicesPage = ({ serviceType }: ServicesPageProps) => {
+export const ServicesPage = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const serviceType = searchParams.get('type');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'rating' | 'price' | 'distance'>('rating');
   
@@ -45,8 +44,10 @@ export const ServicesPage = ({ serviceType }: ServicesPageProps) => {
   });
 
   const handleBookProvider = (provider: ServiceProvider) => {
-    // In a real app, this would navigate to booking page
-    console.log('Booking provider:', provider.name);
+    toast({
+      title: "Booking Request Sent!",
+      description: `Your booking request has been sent to ${provider.name}. They will respond within ${provider.responseTime}.`,
+    });
   };
 
   return (

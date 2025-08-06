@@ -49,11 +49,11 @@ export const ProviderCard = ({ provider, onSelect }: ProviderCardProps) => {
                 <h3 className="font-semibold text-lg">{provider.name}</h3>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="w-4 h-4" />
-                  <span>{provider.location} • {provider.distance} miles</span>
+                  <span>{provider.location} • {provider.distance} km</span>
                 </div>
               </div>
               <div className="text-right">
-                <div className="font-semibold text-lg">${provider.hourlyRate}/hr</div>
+                <div className="font-semibold text-lg">₹{provider.hourlyRate}/hr</div>
                 <div className={`text-sm ${getAvailabilityColor(provider.availability)}`}>
                   {getAvailabilityText(provider.availability)}
                 </div>

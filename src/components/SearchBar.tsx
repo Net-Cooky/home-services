@@ -8,7 +8,7 @@ interface SearchBarProps {
   location?: string;
 }
 
-export const SearchBar = ({ searchQuery, onSearchChange, location = "New York, NY" }: SearchBarProps) => {
+export const SearchBar = ({ searchQuery, onSearchChange, location = "Mumbai, India" }: SearchBarProps) => {
   return (
     <div className="w-full max-w-4xl mx-auto">
       <div className="flex gap-2 p-2 bg-card rounded-lg shadow-medium border">
