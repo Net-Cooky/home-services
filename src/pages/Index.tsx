@@ -17,6 +17,14 @@ const Index = () => {
     navigate(`/services?type=${encodeURIComponent(serviceName)}`);
   };
 
+  const handleHeroSearch = () => {
+    if (searchQuery.trim()) {
+      navigate(`/services?search=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      navigate('/services');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -36,6 +44,7 @@ const Index = () => {
             <SearchBar 
               searchQuery={searchQuery}
               onSearchChange={setSearchQuery}
+              onSearch={handleHeroSearch}
             />
           </div>
           

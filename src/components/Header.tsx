@@ -42,10 +42,18 @@ export const Header = () => {
             >
               Services
             </Button>
-            <Button variant="ghost" className="font-medium">
+            <Button 
+              variant={isActive('/how-it-works') ? 'default' : 'ghost'}
+              onClick={() => navigate('/how-it-works')}
+              className="font-medium"
+            >
               How it works
             </Button>
-            <Button variant="ghost" className="font-medium">
+            <Button 
+              variant={isActive('/support') ? 'default' : 'ghost'}
+              onClick={() => navigate('/support')}
+              className="font-medium"
+            >
               Support
             </Button>
           </nav>
