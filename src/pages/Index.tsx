@@ -6,7 +6,7 @@ import { ServiceCard } from '../components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { Star, Shield, Clock, Users } from 'lucide-react';
+import { Star, Shield, Clock, Users, Lightbulb, Palette, Code } from 'lucide-react';
 import { serviceCategories } from '../data/mockData';
 
 const Index = () => {
@@ -121,6 +121,59 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2">Satisfaction Guaranteed</h3>
                 <p className="text-muted-foreground">
                   Your satisfaction is guaranteed. Not happy? We'll make it right or your money back.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Founders */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Meet Our Founders</h2>
+            <p className="text-muted-foreground">
+              The passionate team behind HomeServices
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Lightbulb className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold mb-1">Vishnu Vardhan</h3>
+                <p className="text-primary font-medium mb-3">Product Manager</p>
+                <p className="text-muted-foreground text-sm">
+                  The visionary who conceived the idea of connecting homeowners with trusted service professionals through technology.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Palette className="w-8 h-8 text-accent-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold mb-1">Anish Kumar</h3>
+                <p className="text-accent font-medium mb-3">UI/UX Designer</p>
+                <p className="text-muted-foreground text-sm">
+                  The creative mind behind the beautiful and intuitive user experience that makes finding home services effortless.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-success to-success/70 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Code className="w-8 h-8 text-success-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold mb-1">Sai Prasath</h3>
+                <p className="text-success font-medium mb-3">Lead Developer</p>
+                <p className="text-muted-foreground text-sm">
+                  The technical expert who brought the platform to life with robust, scalable code and seamless functionality.
                 </p>
               </CardContent>
             </Card>
